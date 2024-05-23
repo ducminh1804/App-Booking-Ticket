@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Tiêu đề -->
+    <ImageView
+        android:id="@+id/Logodautrang"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logoapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Khoảng trống -->
+    <View
+        android:id="@+id/space_between_logo_and_uudai"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        app:layout_constraintTop_toBottomOf="@id/Logodautrang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/space_between_logo_and_uudai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- CHON UU DAI-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_uudai"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="4dp">
+
+                <FrameLayout
+                    android:id="@+id/chooseuudai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Hong">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPageruudai"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tab_layout_uudai"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/cardView_uudai"-->
+<!--                app:tabIndicatorColor="@android:color/white"-->
+<!--                app:tabSelectedTextColor="@android:color/white"-->
+<!--                app:tabIndicatorHeight="4dp"-->
+<!--                app:tabBackground="@color/Hong"-->
+<!--                app:tabTextColor="@android:color/darker_gray"/>-->
+
+            <!-- Chọn phim -->
+            <FrameLayout
+                android:id="@+id/chooseflim"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_below="@id/cardView_uudai"
+                android:background="@color/tim"
+                android:layout_marginTop="8dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <!-- Phim sắp chiếu -->
+            <TextView
+                android:id="@+id/text_phimsapchieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chooseflim"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold|italic"
+                android:textSize="30sp"
+                android:text="Phim sắp chiếu"/>
+
+            <FrameLayout
+                android:id="@+id/phimsapchieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_phimsapchieu"
+                android:layout_marginTop="8dp"
+                android:background="@color/white">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSapChieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:clipToPadding="false" />
+
+            </FrameLayout>
+
+            <!-- Tin tuc -->
+            <TextView
+                android:id="@+id/text_tintuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phimsapchieu"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold|italic"
+                android:textSize="30sp"
+                android:text="Tin tức"/>
+
+            <FrameLayout
+                android:id="@+id/tintuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_tintuc"
+                android:layout_marginTop="8dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tintuc"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <!-- Chọn phim -->
+            <TextView
+                android:id="@+id/text_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tintuc"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Choose a movie:"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_movie"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/button_buy_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_movie"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                android:text="Đặt vé" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
