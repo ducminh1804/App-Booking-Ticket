@@ -5,7 +5,9 @@
     android:id="@+id/paypage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".PayPage_SettingPage.PayPage">
     tools:context=".PayPage">
+
 
     <LinearLayout
         android:id="@+id/btn_backpage"
