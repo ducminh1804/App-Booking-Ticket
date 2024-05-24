@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 import com.example.bookingticket.PayPage_SettingPage.PayPage;
 import com.example.bookingticket.PayPage_SettingPage.SettingPage;
 import com.example.bookingticket.Screening_Detail_Page.ScreeningActivity;

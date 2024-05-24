@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PayPage_SettingPage.SettingPage">
+    tools:context=".SettingPage">
+
 
     <LinearLayout
         android:layout_width="match_parent"
