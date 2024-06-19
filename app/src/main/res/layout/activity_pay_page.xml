@@ -145,14 +145,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_up_down_text"
+                android:id="@+id/btn_up_down_text_1"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_up"
+                    android:id="@+id/btn_up_1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -171,7 +171,7 @@
                     tools:ignore="DuplicateIds" />
 
                 <Button
-                    android:id="@+id/btn_down"
+                    android:id="@+id/btn_down_1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -238,14 +238,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_up_down_text"
+                android:id="@+id/btn_up_down_text_2"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_up"
+                    android:id="@+id/btn_up_2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -264,7 +264,7 @@
                     tools:ignore="DuplicateIds" />
 
                 <Button
-                    android:id="@+id/btn_down"
+                    android:id="@+id/btn_down_2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -331,7 +331,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_up_down_text"
+                android:id="@+id/btn_up_down_text_3"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -339,7 +339,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_up"
+                    android:id="@+id/btn_up_3"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -358,7 +358,7 @@
                     tools:ignore="DuplicateIds" />
 
                 <Button
-                    android:id="@+id/btn_down"
+                    android:id="@+id/btn_down_3"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"

@@ -29,6 +29,4 @@ public class ScreeningActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

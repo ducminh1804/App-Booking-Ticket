@@ -13,6 +13,14 @@
         android:theme="@style/Theme.BookingTicket"
         tools:targetApi="31">
         <activity
+            android:name=".ProfilePhim.ProfilePhim"
+            android:exported="false"
+            android:theme="@style/Theme.BookingTicket" />
+        <activity
+            android:name=".PersonPage.PersonPageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BookingTicket" />
+        <activity
             android:name=".ScreeningPage"
             android:exported="false" />
         <activity
