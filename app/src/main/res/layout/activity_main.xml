@@ -9,10 +9,62 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="List danh sách!"
+        app:layout_constraintBottom_toTopOf="@+id/trangthanhtoan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <Button
+        android:id="@+id/trangthanhtoan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Trang Thanh Toan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/trangsetting"/>
+
+    <Button
+        android:id="@+id/trangsetting"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Trang Setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/trangscreening"
+        app:layout_constraintTop_toBottomOf="@+id/trangthanhtoan" />
+
+    <Button
+        android:id="@+id/trangscreening"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Trang screening"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/trangperson"
+        app:layout_constraintTop_toBottomOf="@+id/trangsetting" />
+
+    <Button
+        android:id="@+id/trangperson"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Trang Person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/trangprofilephim"
+        app:layout_constraintTop_toBottomOf="@+id/trangscreening" />
+
+    <Button
+        android:id="@+id/trangprofilephim"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Trang Profile phim"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/trangperson" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
