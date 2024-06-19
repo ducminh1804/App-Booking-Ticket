@@ -47,13 +47,13 @@ public class PayPage extends AppCompatActivity {
         cb2=findViewById(R.id.cb2);
         cb3=findViewById(R.id.cb3);
 
-        btn_up_cb1 = cb1.findViewById(R.id.btn_up);
-        btn_up_cb2 = cb2.findViewById(R.id.btn_up);
-        btn_up_cb3 = cb3.findViewById(R.id.btn_up);
+        btn_up_cb1 = cb1.findViewById(R.id.btn_up_1);
+        btn_up_cb2 = cb2.findViewById(R.id.btn_up_2);
+        btn_up_cb3 = cb3.findViewById(R.id.btn_up_3);
 
-        btn_down_cb1 = cb1.findViewById(R.id.btn_down);
-        btn_down_cb2 = cb2.findViewById(R.id.btn_down);
-        btn_down_cb3 = cb3.findViewById(R.id.btn_down);
+        btn_down_cb1 = cb1.findViewById(R.id.btn_down_1);
+        btn_down_cb2 = cb2.findViewById(R.id.btn_down_2);
+        btn_down_cb3 = cb3.findViewById(R.id.btn_down_3);
 
         nextPage = findViewById(R.id.nextPage);
 
