@@ -13,24 +13,12 @@
         android:theme="@style/Theme.BookingTicket"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name="com.example.Seat_Page.SeatActivity"
             android:exported="false" />
-        <activity
-            android:name="com.example.Seat_Page.Seat"
-            android:exported="false" />
-        <activity
-            android:name=".Seat"
-            android:exported="false" />
-=======
-            android:name=".ProfilePhim.ProfilePhim"
-            android:exported="false"
-            android:theme="@style/Theme.BookingTicket" />
         <activity
             android:name=".PersonPage.PersonPageActivity"
             android:exported="false"
             android:theme="@style/Theme.BookingTicket" />
->>>>>>> e6d2171db7ac6ae8eb69045fca063b512470da98
         <activity
             android:name=".ScreeningPage"
             android:exported="false" />
