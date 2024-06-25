@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+import com.example.Seat_Page.SeatActivity;
 import com.example.bookingticket.PayPage_SettingPage.PayPage;
 import com.example.bookingticket.PayPage_SettingPage.SettingPage;
 import com.example.bookingticket.PersonPage.MainPersonPage;
@@ -15,6 +17,7 @@ import com.example.bookingticket.ProfilePhim.ProfilePhim;
 import com.example.bookingticket.Screening_Detail_Page.ScreeningActivity;
 
 public class MainActivity extends AppCompatActivity {
+
     private Button trangthanhtoan, trangsetting, trangscreening, trangperson, trangprofilephim;
 
     @Override
@@ -67,5 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

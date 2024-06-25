@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".PayPage_SettingPage.PayPage">
 
+
     <LinearLayout
         android:id="@+id/btn_backpage"
         android:layout_width="fill_parent"

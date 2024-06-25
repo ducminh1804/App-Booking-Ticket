@@ -13,9 +13,8 @@
         android:theme="@style/Theme.BookingTicket"
         tools:targetApi="31">
         <activity
-            android:name=".ProfilePhim.ProfilePhim"
-            android:exported="false"
-            android:theme="@style/Theme.BookingTicket" />
+            android:name="com.example.Seat_Page.SeatActivity"
+            android:exported="false" />
         <activity
             android:name=".PersonPage.PersonPageActivity"
             android:exported="false"
@@ -28,6 +27,9 @@
             android:exported="false" />
         <activity
             android:name=".PayPage_SettingPage.PayPage"
+            android:exported="false" />
+        <activity
+            android:name=".PayPage"
             android:exported="false" />
         <activity
             android:name=".Screening_Detail_Page.ScreeningActivity"
