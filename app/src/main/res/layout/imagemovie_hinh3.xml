@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
+        android:id="@+id/choosefilm_slide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -46,6 +47,7 @@
             android:text="Phim Hài, Tình Cảm"/>
 
         <RelativeLayout
+            android:id="@+id/nav_buyticket"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

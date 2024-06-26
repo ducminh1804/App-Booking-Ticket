@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainHome">
 
     <!-- Tiêu đề -->
     <ImageView
@@ -63,24 +63,15 @@
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
 
-<!--            <com.google.android.material.tabs.TabLayout-->
-<!--                android:id="@+id/tab_layout_uudai"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/cardView_uudai"-->
-<!--                app:tabIndicatorColor="@android:color/white"-->
-<!--                app:tabSelectedTextColor="@android:color/white"-->
-<!--                app:tabIndicatorHeight="4dp"-->
-<!--                app:tabBackground="@color/Hong"-->
-<!--                app:tabTextColor="@android:color/darker_gray"/>-->
-
             <!-- Chọn phim -->
             <FrameLayout
-                android:id="@+id/chooseflim"
+                android:id="@+id/choosefilm"
                 android:layout_width="match_parent"
                 android:layout_height="650dp"
                 android:layout_below="@id/cardView_uudai"
                 android:background="@color/tim"
+                android:clickable="true"
+                tools:ignore="MissingConstraints"
                 android:layout_marginTop="8dp">
 
                 <androidx.viewpager.widget.ViewPager
@@ -90,12 +81,45 @@
 
             </FrameLayout>
 
+            <FrameLayout
+                android:id="@+id/list_film"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/Snow"
+                android:layout_below="@id/choosefilm">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/icon_choosefilm"
+                        android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iconfilm_bottom"/>
+
+                    <TextView
+                        android:id="@+id/choose_listfilm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/fuchsia"
+                        android:text="Chọn phim để chill"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
             <!-- Phim sắp chiếu -->
             <TextView
                 android:id="@+id/text_phimsapchieu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/chooseflim"
+                android:layout_below="@id/list_film"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:textStyle="bold|italic"
@@ -140,45 +164,60 @@
                 android:background="@color/white">
 
                 <ImageView
+                    android:id="@+id/img_tintuc"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tintuc"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="50dp"
                     android:scaleType="centerCrop"
                     android:adjustViewBounds="true"/>
 
             </FrameLayout>
-
-            <!-- Chọn phim -->
-            <TextView
-                android:id="@+id/text_movie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tintuc"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp"
-                android:text="Choose a movie:"
-                android:textSize="20sp" />
-
-            <Spinner
-                android:id="@+id/spinner_movie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_movie"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp" />
-
-            <Button
-                android:id="@+id/button_buy_ticket"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/spinner_movie"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_alignParentEnd="true"
-                android:text="Đặt vé" />
-
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <!-- Thanh điều hướng bottom -->
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E0E0E0"
+        android:padding="15dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconhomes_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_film"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconfilm_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_picture"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconpictures_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_person"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconpersons_bottom" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

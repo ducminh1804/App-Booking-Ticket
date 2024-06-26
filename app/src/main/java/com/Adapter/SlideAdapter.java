@@ -1,4 +1,4 @@
-package Adapter;
+package com.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -22,7 +22,7 @@ public class SlideAdapter extends PagerAdapter {
     public SlideAdapter(Context context, ArrayList<Integer> images, ArrayList<String> captions) {
         this.context = context;
         this.images = images;
-        this.captions = captions;
+        this.captions = this.captions;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class SlideAdapter extends PagerAdapter {
             ImageView imageView = slideLayout.findViewById(R.id.imageView_slide);
             TextView titleTextView = slideLayout.findViewById(R.id.titleTextView);
             imageView.setImageResource(images.get(position));
-            titleTextView.setText(captions.get(position));
+
 
             container.addView(slideLayout);
         }
