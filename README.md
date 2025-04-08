@@ -1,3 +1,4 @@
+### Link Backend: https://github.com/ducminh1804/Backend-Booking-Ticket
 # 🎟️ Booking Ticket - Ứng dụng đặt vé xem phim
 
 Ứng dụng Android giúp người dùng dễ dàng xem lịch chiếu, chọn ghế, thanh toán và quản lý thông tin cá nhân.  
